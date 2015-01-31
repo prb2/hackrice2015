@@ -16,8 +16,9 @@ public class EventPage extends Activity {
     }
 
     public void BackToMain(View view){
-        Intent i = new Intent(EventPage.this,MainActivity.class);
-        startActivity(i);
+        //Intent i = new Intent(EventPage.this,MainActivity.class);
+        //startActivity(i);
+        finish();
     }
 
 }
