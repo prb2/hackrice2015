@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="18" />
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
@@ -26,6 +26,9 @@
         <activity
             android:name=".EventPage"
             android:label="EventPage" />
+        <activity
+            android:name=".DetailPage"
+            android:label="DetailPage" />
 
         <meta-data android:value="@string/facebook_app_id" android:name="com.facebook.sdk.ApplicationId"/>
     </application>
