@@ -35,6 +35,9 @@
         <activity
             android:name=".PaymentPage"
             android:label="PaymentPage" />
+        <activity
+            android:name=".PaymentPage"
+            android:label="PaymentPage" />
 
 
         <meta-data android:value="@string/facebook_app_id" android:name="com.facebook.sdk.ApplicationId"/>
