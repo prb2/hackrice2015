@@ -3,7 +3,8 @@ package hackrice.team.drinkup;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
-
+import android.view.View;
+import android.content.Intent;
 public class MainActivity extends Activity {
 
 	@Override
@@ -19,8 +20,9 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
-    public void LoginTest(){
-
+    public void LoginTest(View view){
+        Intent i = new Intent(MainActivity.this,EventPage.class);
+        startActivity(i);
     }
 
 }
