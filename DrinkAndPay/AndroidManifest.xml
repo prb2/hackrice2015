@@ -29,6 +29,13 @@
         <activity
             android:name=".DetailPage"
             android:label="DetailPage" />
+        <activity
+            android:name=".VenmoWebViewActivity"
+            android:label="VenmoWebViewActivity" />
+        <activity
+            android:name=".PaymentPage"
+            android:label="PaymentPage" />
+
 
         <meta-data android:value="@string/facebook_app_id" android:name="com.facebook.sdk.ApplicationId"/>
     </application>
