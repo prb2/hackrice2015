@@ -26,6 +26,12 @@
         <activity
             android:name=".EventPage"
             android:label="EventPage" />
+        <activity
+            android:name=".EventCreation"
+            android:label="EventCreation" />
+        <activity
+            android:name=".EventCreation"
+            android:label="EventCreation" />
 
         <meta-data android:value="@string/facebook_app_id" android:name="com.facebook.sdk.ApplicationId"/>
     </application>
