@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="false"
+    android:id="@+id/create_event_main">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -39,6 +44,26 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/crawl_or_stop">
+        <RadioButton
+            android:id="@+id/radio_right1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test1"
+            android:checked="true"
+            android:textColor="#f00"/>
+        <RadioButton
+            android:id="@+id/radio_left1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test2"
+            android:textColor="#0f0" />
+    </RadioGroup>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,12 +74,92 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <CalendarView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/calendarView"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/inputdate"
         android:layout_below="@+id/eventdate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Event Time"
+        android:id="@+id/eventtime"
+        android:layout_below="@+id/inputdate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/timeinput"
+        android:layout_below="@+id/eventtime" />
+        //android:layout_alignParentBottom="true"
+        //android:layout_alignParentLeft="true"
+        //android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Event Title"
+        android:id="@+id/eventtitle"
+        android:layout_below="@+id/timeinput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/titleinput"
+        android:layout_below="@+id/eventtitle" />
+    //android:layout_alignParentBottom="true"
+    //android:layout_alignParentLeft="true"
+    //android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Main Host"
+        android:id="@+id/mainhost"
+        android:layout_below="@+id/titleinput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/mainhostinput"
+        android:layout_below="@+id/mainhost" />
+    //android:layout_alignParentBottom="true"
+    //android:layout_alignParentLeft="true"
+    //android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Stops"
+        android:id="@+id/stops"
+        android:layout_below="@+id/mainhostinput"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
 </RelativeLayout>
+</ScrollView>
